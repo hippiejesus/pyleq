@@ -1,0 +1,44 @@
+(( my first attempt at understanding string input ))
+(( attempting via a character input loop ))
+
+->input
+
+.Z=0
+.negOne=-1
+.total=1
+.buffer=0
+.check='\n'
+.i=1
+.input_start=0
+
+input:
+    - (-1) input_start
+    ~~~
+    ->check_next_input
+    \\\
+
+input_next:
+    - buffer input_start+i
+    ~~~
+    - buffer buffer
+    ~~~
+    - negOne i
+    ~~~
+    - negOne total
+    ~~~
+    ->check_next_input
+
+
+check_next_input:
+    - check buffer
+    ~~~
+    if (-1) >= buffer >> finish !> input_next
+    ~~~
+    \\\
+
+finish:
+    ->(-1)
+
+
+
+(( end ))

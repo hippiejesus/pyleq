@@ -1,0 +1,34 @@
+
+(( start ))
+->main
+
+(( main diverts to check ))
+main:
+    ->check
+
+(( check loops if x is over 0 ))
+check:
+    if x >= Z >> loop !> end
+
+(( end function/continuation ))
+end:
+    ->(-1)
+
+(( main loop ))
+loop:
+    - one x
+~~~
+    + one y
+~~~
+    ->check
+
+(( data ))
+
+.x=5
+.y=0
+.Z=0
+.negOne=-1
+.one=1
+
+
+(( end ))

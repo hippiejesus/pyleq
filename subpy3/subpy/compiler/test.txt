@@ -1,0 +1,10 @@
+Z Z main
+
+main: Z Z
+      A Z
+      Z B
+      Z Z
+
+.A: 3
+.B: 5
+.Z: 0

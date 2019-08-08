@@ -1,0 +1,43 @@
+Flow Control (subc.py): "Control Layer"
+- 'if' junction
+    -- '<' operator
+    -- '>' operator
+    -- '<=' operator
+    -- '>=' operator
+- 'math' operation
+    -- '-' signifier
+    -- '+' signifier
+    -- '=' signifier
+- 'literal' interpretation
+    -- all sqasm compatible commands
+    -- '/l' terminator
+- 'comments'
+    -- '%' initiator
+    -- all characters must be strung together.
+    -- can be placed anywhere in a command and on any line
+
+Commands (subsh.py): "Command Shell"
+- 'print' command
+
+- 'input' command
+
+- 'print_input' command
+
+Workspace (subm.py): "Space Manager"
+- 'buffer' creation
+- 'storage' allocation
+- 'link library' generation
+    -- Link libraries are smaller buffer spaces that contain references to the locations of information in the allocated storage space.
+- 'command' replication ("command loading")
+    -- Loads subc structure for a command and edits it to be context-specific
+    -- Utilized by the command shell to generate subc input.
+
+Modules (/commands/): "Modules"
+- Command schemes
+- Storage maps
+
+Schema:
+    The control layer is utilized as the core component of any subpy operation.
+    The command shell interprets higher level commands and uses the space manager to assemble any necessary modules.
+    The shell then creates an intermediary file that can be interpreted by the control layer and in turn by sqasm.
+    By nature and necessity, any module, as well as any output from the command shell, must be subc compatible.

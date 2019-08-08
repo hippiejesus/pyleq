@@ -1,0 +1,40 @@
+->main
+
+.x=0
+.y=0
+.return=0
+.a=3
+.b=5
+.ascii=48
+.Z=0
+
+function:
+    + x y
+    ~~~
+    + y return
+    ~~~
+    - x x
+    ~~~
+    - y y
+    ~~~
+    ->end
+    ~~~
+
+end:
+    + ascii return
+    ~~~
+    - return (-1)
+    ~~~
+    ->(-1)
+    ~~~
+
+main:
+    + a x
+    ~~~
+    + b y
+    ~~~
+    ->function
+    ~~~
+~~~
+
+(( end ))

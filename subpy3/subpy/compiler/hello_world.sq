@@ -1,0 +1,15 @@
+%Hello_World!
+loop:
+    %output_*p-p++
+    - a a ; + p a ; - a:0 (-1) ;
+    - m1 p ;
+
+    %check_end
+    - a a ; + E a ;
+    if p < a >> loop !> cont ;
+
+cont:
+    ->(-1)
+
+.p=H
+lit .H:"Hello, World!\n" E:E /l

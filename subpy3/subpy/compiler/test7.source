@@ -1,0 +1,22 @@
+(( it appears there is one end line char at the end of the input buffer ))
+(( by cancelling this out on Z, we open up the buffer for further input ))
+(( optionally, the newline char can be displayed as well ))
+
+.x=0
+.y=0
+.Z=0
+
+- (-1) x
+~~~
+- (-1) Z
+~~~
+- (-1) Z
+~~~
+- Z Z
+~~~
+- (-1) y
+~~~
+->(-1)
+~~~
+
+(( end ))

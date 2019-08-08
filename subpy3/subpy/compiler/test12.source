@@ -1,0 +1,21 @@
+
+loop:
+%output_*p
+- a   a    ;
++ p   a    ;
+- a:0 (-1) ;
+
+%p++
+- m1 p ;
+
+(( check if p<E ))
+- a a ;
++ E a ;
+if p < a >> loop !> end ;
+
+end:
+    ->(-1)
+
+.p=H .Z=0 .m1=-1
+lit .H:"Hello,_World!\n" E:E /l
+

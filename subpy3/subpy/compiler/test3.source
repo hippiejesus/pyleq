@@ -1,0 +1,17 @@
+(( start ))
+
+.x=5
+.y=0
+.Z=0
+.negOne=-1
+.one=1
+
+loop:
+    + one y
+    ~~~
+    if x <= one >> cont !> loop
+~~~
+cont:
+    ->(-1)
+
+(( end ))

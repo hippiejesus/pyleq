@@ -1,0 +1,30 @@
+(( Test Program 1 ))
+
+begin:
+
+(( goto main ))
+->main
+
+(( main logic ))
+main:
+    .A=8 .B=3
+    if A < B >> yes !> no
+~ ~ 
+    yes: 
+        if B > A >> no !> main
+        \\yes
+
+    no:  
+        ->(-1)
+        \\no
+~ ~	
+    \\main
+
+(( working data ))
+.Z=0
+.negOne=-1
+.str="this_is_a_test_string!"
+.chr='C'
+
+(( ending denotation ))
+end.
